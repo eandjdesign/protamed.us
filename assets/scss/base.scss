@@ -1,40 +1,28 @@
-* {
-  box-sizing: border-box;
-}
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", "Helvetica", Arial, sans-serif;
-    font-size: 28px;
-    line-height: 1.5;
-  }
-  header,
-  main,
-  footer { text-align: center; }
+@import "library/reset";
+@import "library/foundation";
 
-  header {
-    background-color: #4F4F4F;
-    text-align: center;
-    padding: 25px 0;
-    overflow: hidden;
-  }
-  h1 {
-    font-weight: normal;
-    font-size: 60px;
-    color: #64BECD;
-  }
-  address {
-    font-style: normal;
-  }
-  .svg-logo,
-  .svg-footer-logo {
-    max-height: 100%;
-    max-width: 100%;
-    width: 500px;
-  }
-  .svg-logo {
-    width: 500px;
-  }
-  .svg-footer-logo {
-    width: 250px;
-  }
+.content-header,
+.content-main,
+.content-footer { text-align: center; }
+
+
+h1 {
+  font-weight: normal;
+  font-size: 60px;
+  color: #64BECD;
+}
+address {
+  font-style: normal;
+}
+.svg-logo,
+.svg-footer-logo {
+  max-height: 100%;
+  max-width: 100%;
+  width: 500px;
+}
+.svg-logo {
+  width: 500px;
+}
+.svg-footer-logo {
+  width: 250px;
+}

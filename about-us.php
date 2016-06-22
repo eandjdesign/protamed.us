@@ -25,7 +25,21 @@
       </svg>
     </header>
     <main>
-      <h1>Coming Soon</h1>
+      <section class="section-intro">
+        <div class="container">
+          <h1 class="title-keyline">ProtaMed, is a private drug development company, in Kirkland, WA, focused on targeting misfolded proteins and amyloid diseases.</h1>
+        </div>
+        <section class="section-approach">
+          <div class="container">
+
+          </div>
+        </section>
+        <section class="section-mission">
+          <div class="container">
+
+          </div>
+        </section>
+      </section>
       <p>Our website is under construction. Please stay tuned for upcoming changes.</p>
       <address>
         <span class="phone">(425) 823-0400</span>

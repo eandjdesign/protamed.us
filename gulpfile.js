@@ -5,6 +5,7 @@ var gulp = require('gulp'),                         // gulp core
     sass = require('gulp-sass'),                    // sass compiler
     notify = require('gulp-notify'),                // send notifications to osx
     plumber = require('gulp-plumber'),              // disable interuption
+    connect = require('gulp-connect-php'),          // PHP server for browserSync
     sourcemaps = require('gulp-sourcemaps'),        // sass sourcemaps
     livereload = require('gulp-livereload'),        // reload on changes
     browserSync = require('browser-sync').create(); // keep yo browsers 'nsync
@@ -30,7 +31,7 @@ gulp.task('compile:css', function() {
     var lineNumber = (error.line) ? 'LINE ' + error.line + ' -- ' : '';
 
     notify({
-      title: 'Blorp',
+      title: 'Protamed',
       subtitle: 'Your Task Failed [' + error.plugin + ']',
       message: lineNumber + 'See console.',
       // icon: notifier_icon,
@@ -76,30 +77,16 @@ gulp.task('watch:css', function() {
 gulp.task('watch:html', function() {
   livereload.listen()
   gulp.watch("*.html").on('change', browserSync.reload);
-});
-
-// compile task for production; minify things, remove unnecessaries
-gulp.task('compile:production', function() {
-  gulp.src(target.sass_src)
-    .on('error', sass.logError)
-
-    .pipe(sass({
-      style: 'compressed',
-      debugInfo: false,
-      lineNumbers: false,
-      errLogToConsole: false
-    }))
-
-    .pipe(gulp.dest(target.css_dest))
+  gulp.watch("*.php").on('change', browserSync.reload);
 });
 
 // compile things for Developer environments
-gulp.task('default', ['compile:css', 'watch:css', 'watch:html'], function() {
-  browserSync.init({
-    port: 8080,
-    server: "./"
+gulp.task('default', ['compile:css', 'watch:css'], function() {
+  connect.server({}, function (){
+    browserSync.init({
+      port: 8000,
+      proxy: '127.0.0.1:8000'
+    });
   });
-});
 
-// compile things for Developer environments
-gulp.task('for-production', ['compile:production']);
+});

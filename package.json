@@ -1,29 +1,22 @@
 {
-  "name": "isu-book-reader-style",
+  "name": "Protamed.us",
   "version": "1.0.0",
-  "description": "Style Exploration for ISU Book Reader",
-  "main": "index.js",
+  "description": "Website for http://protamed.us",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brian Anderson (brian@bitbyteyum.com)",
+  "author": "Eric Ritchey (eric@eandjdesign.com)",
   "license": "ISC",
+  "repository": "https://github.com/eandjdesign/protamed.us",
   "contributors": [
     {
       "name": "Eric Ritchey",
       "email": "eric@eandjdesign.com"
     },
     {
-      "name": "Brian Anderson",
-      "email": "banderson623@gmail.com"
-    },
-    {
-      "name": "Scott Kellum",
-      "email": "scott@scottkellum.com"
-    },
-    {
-      "name": "Levi Figueira",
-      "email": "me@levifig.com"
+      "name": "James Carleton",
+      "email": "james@eandjdesign.com"
     }
   ],
   "dependencies": {
@@ -35,10 +28,12 @@
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
+    "gulp-connect-php": "0.0.7",
     "gulp-livereload": "^3.8.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "susy": "^2.2.12"
   }
 }
