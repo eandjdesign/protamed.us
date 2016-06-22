@@ -1,18 +1,34 @@
 <?php
-
-  function getPageCssFile() {
-
-    $pathInfo = $_SERVER['PATH_INFO'];
-
-    if ($pathInfo) {
-      $fileToInclude = $pathInfo;
-    } else {
-      $fileToInclude = '/index';
+/**
+ * Get page folder dynamically based on url.
+ *
+ * @return string Page folder.
+ */
+function getPageFolder() {
+    $path = $_SERVER['PATH_INFO'];
+    if (!$path) {
+        $path = '/index';
     }
+    return $path;
+}
 
-    $pathToCustomCss = '/assets/css/pages' . $fileToInclude . '.css';
+/**
+ * Get js path dynamically based on url.
+ *
+ * @return string Js path.
+ */
+function getPageJsPath() {
+    $folder = getPageFolder();
+    return '/assets/js/pages' . $folder . '.js';
+ }
 
-    return $pathToCustomCss;
-
-  }
+/**
+ * Get css path dynamically based on url.
+ *
+ * @return string Css path.
+ */
+function getPageCssPath() {
+    $folder = getPageFolder();
+    return '/assets/css/pages' . $folder . '.css';
+}
 ?>
