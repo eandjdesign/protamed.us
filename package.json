@@ -1,0 +1,44 @@
+{
+  "name": "isu-book-reader-style",
+  "version": "1.0.0",
+  "description": "Style Exploration for ISU Book Reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Anderson (brian@bitbyteyum.com)",
+  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Eric Ritchey",
+      "email": "eric@eandjdesign.com"
+    },
+    {
+      "name": "Brian Anderson",
+      "email": "banderson623@gmail.com"
+    },
+    {
+      "name": "Scott Kellum",
+      "email": "scott@scottkellum.com"
+    },
+    {
+      "name": "Levi Figueira",
+      "email": "me@levifig.com"
+    }
+  ],
+  "dependencies": {
+    "susy": "^2.2.12",
+    "bourbon": "^4.2.6",
+    "neat": "^1.2.2",
+    "breakpoint-sass": "^2.7.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
