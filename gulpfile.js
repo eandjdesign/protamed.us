@@ -31,7 +31,7 @@ gulp.task('compile:css', function() {
     var lineNumber = (error.line) ? 'LINE ' + error.line + ' -- ' : '';
 
     notify({
-      title: 'Blorp',
+      title: 'Protamed',
       subtitle: 'Your Task Failed [' + error.plugin + ']',
       message: lineNumber + 'See console.',
       // icon: notifier_icon,

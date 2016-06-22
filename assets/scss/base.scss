@@ -1,17 +1,11 @@
 @import "library/reset";
-// @import "pages/index";
+@import "library/foundation";
 
-//header-caption
-header,
-main,
-footer { text-align: center; }
+.content-header,
+.content-main,
+.content-footer { text-align: center; }
 
-header {
-  background-color: #4F4F4F;
-  text-align: center;
-  padding: 25px 0;
-  overflow: hidden;
-}
+
 h1 {
   font-weight: normal;
   font-size: 60px;
