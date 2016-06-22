@@ -1,21 +1,16 @@
 <?php
 
-  // die('<pre>' . print_r($_SERVER['PATH_INFO'], 1) . '</pre>');
-  // die('<pre>' . print_r($_SERVER, 1) . '</pre>');
-
-
-  global $customCss;
-  $customCss = includePageCssFile();
-
-  function includePageCssFile() {
+  function getPageCssFile() {
 
     $pathInfo = $_SERVER['PATH_INFO'];
 
     if ($pathInfo) {
-      $pathToCustomCss = $pathInfo;
+      $fileToInclude = $pathInfo;
     } else {
-      $pathToCustomCss = '/index';
+      $fileToInclude = '/index';
     }
+
+    $pathToCustomCss = '/assets/css/pages' . $fileToInclude . '.css';
 
     return $pathToCustomCss;
 

@@ -10,7 +10,7 @@
     <title>Protamed</title>
     <link href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="/assets/css/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/css/pages<?php echo $customCss; ?>.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<?php echo getPageCssFile(); ?>" rel="stylesheet" type="text/css" media="all">
   </head>
   <body class="page-index">
     <header class="content-header">
