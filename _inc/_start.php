@@ -5,11 +5,11 @@
  * @return string Page folder.
  */
 function getPageFolder() {
-    $path = $_SERVER['PATH_INFO'];
-    if (!$path) {
-        $path = '/index';
-    }
-    return $path;
+  $path = $_SERVER['PATH_INFO'];
+  if (!$path) {
+    $path = '/index';
+  }
+  return $path;
 }
 
 /**
@@ -18,9 +18,9 @@ function getPageFolder() {
  * @return string Js path.
  */
 function getPageJsPath() {
-    $folder = getPageFolder();
-    return '/assets/js/pages' . $folder . '.js';
- }
+  $folder = getPageFolder();
+  return '/assets/js/pages' . $folder . '.js';
+}
 
 /**
  * Get css path dynamically based on url.
@@ -28,7 +28,6 @@ function getPageJsPath() {
  * @return string Css path.
  */
 function getPageCssPath() {
-    $folder = getPageFolder();
-    return '/assets/css/pages' . $folder . '.css';
+  $folder = getPageFolder();
+  return '/assets/css/pages' . $folder . '.css';
 }
-?>

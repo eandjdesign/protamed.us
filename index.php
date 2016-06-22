@@ -1,8 +1,7 @@
 
-<?php include_once('_inc/_start.php'); ?>
-
-
-<!DOCTYPE html>
+<?php
+include_once('_inc/_start.php');
+?><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,7 +9,7 @@
     <title>Protamed</title>
     <link href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="/assets/css/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="<?php echo getPageCssFile(); ?>" rel="stylesheet" type="text/css" media="all">
+    <link href="<?php echo getPageCssPath(); ?>" rel="stylesheet" type="text/css" media="all">
   </head>
   <body class="page-index">
     <header class="content-header">
