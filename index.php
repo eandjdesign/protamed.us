@@ -3,14 +3,7 @@
 include_once('_inc/_start.php');
 ?><!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Protamed</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href="/assets/css/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="<?php echo getPageCssPath(); ?>" rel="stylesheet" type="text/css" media="all">
-  </head>
+  <?php include_once('_inc/page-parts/head.php'); ?>
   <body class="page-index">
     <header class="content-header">
       <div class="container">
@@ -34,6 +27,37 @@ include_once('_inc/_start.php');
     <main class="content-main">
       <section class="section-intro">
         <div class="container">
+          <p clas="intro">ProtaMed, is a private drug development company, in Kirkland, WA, focused on targeting misfolded proteins and amyloid diseases.</p>
+          <p>We are utilizing our amyloid and proteoglycan expertise in an effort to transform the lives of victims of Alzheimer's disease, Parkinson's disease, type 2 diabetes and systemic amyloid disease (including AL, TTR and AA amyloidosis).</p>
+        </div>
+      </section>
+      <section class="section-leadership bg-alternate">
+        <h1 class="section-title">Leadership Team</h1>
+        <div class="container">
+          <ul class="leadership-team--list">
+            <li class="leader">
+              <a href="#" title="" class="leader-link">
+                <img src="//placehold.it/150/fff" class="leader-image" alt="First/Last Name">
+                <strong class="leader-name">First/Last Name</strong>
+                <span class="leader-title">PHD, CEO</span>
+              </a>
+            </li>
+            <li class="leader">
+              <a href="#" title="" class="leader-link">
+                <img src="//placehold.it/150/fff" class="leader-image" alt="First/Last Name">
+                <strong class="leader-name">First/Last Name</strong>
+                <span class="leader-title">PHD, CEO</span>
+              </a>
+            </li>
+            <li class="leader">
+              <a href="#" title="" class="leader-link">
+                <img src="//placehold.it/150/fff" class="leader-image" alt="First/Last Name">
+                <strong class="leader-name">First/Last Name</strong>
+                <span class="leader-title">PHD, CEO</span>
+              </a>
+            </li>
+          </ul>
+          <a href="#" title="Meet our People" class="">Meet our People</a>
         </div>
       </section>
       <address>
@@ -42,6 +66,6 @@ include_once('_inc/_start.php');
         Kirkland, WA 98034</p>
       </address>
     </main>
-    <footer class="content-footer"></footer>
+    <?php include_once('_inc/page-parts/foot.php'); ?>
   </body>
 </html>

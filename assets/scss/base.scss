@@ -26,3 +26,40 @@ address {
 .svg-footer-logo {
   width: 250px;
 }
+
+.container {
+  max-width: 930px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bg-alternate {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  background-color: #ccc;
+  padding: 50px 0;
+}
+
+// Homepage -- Leadership Team
+.leadership-team--list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0 0 50px 0;
+  padding: 0;
+  list-style: none;
+}
+.leader {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.leader-name {
+  display: block;
+
+}
+.leader-title { display: block; }
+.leader-image { border-radius: 100%; }
