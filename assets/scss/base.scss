@@ -5,6 +5,11 @@
 .content-main,
 .content-footer { text-align: center; }
 
+.container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1 {
   font-weight: normal;
