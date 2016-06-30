@@ -1,0 +1,25 @@
+
+.btn {
+  padding: 25px 100px;
+  display: inline-block;
+  text-decoration: none;
+  &:hover { text-decoration: none; }
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 4px solid;
+}
+.btn-inverted {
+  color: $inverted;
+  border-color: $inverted;
+  transition: all .15s ease-in-out;
+  &:hover {
+    color: darken($inverted, 10%);
+    border-color: darken($inverted, 10%);
+    transition: all .15s ease-in-out;
+  }
+}
+.btn-rounded {
+  border-radius: 100px;
+}

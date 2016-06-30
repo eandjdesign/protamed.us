@@ -3,14 +3,7 @@
 include_once('_inc/_start.php');
 ?><!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Protamed</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href="/assets/css/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="<?php echo getPageCssPath(); ?>" rel="stylesheet" type="text/css" media="all">
-  </head>
+  <?php include_once('_inc/page-parts/head.php'); ?>
   <body class="page-index">
     <header class="content-header">
       <div class="container">
@@ -34,15 +27,43 @@ include_once('_inc/_start.php');
     <main class="content-main">
       <section class="section-intro">
         <div class="container">
-          ProtaMed is a privately held drug development company, established in November, 2015, focused on new medicines based on breakthrough science and technology previously discovered by ProteoTech and the University of Washington.
+          <p clas="intro">ProtaMed, is a private drug development company, in Kirkland, WA, focused on targeting misfolded proteins and amyloid diseases.</p>
+          <p>We are utilizing our expertise in misfolded protein disorders, amyloid diseases, drug discovery and clinical development, to transform the lives of victims of PD (Parkinson’s Disease) and AD (Alzheimer’s Disease), as well as rare conditions such as AL (immunoglobulin light chain) amyloidosis, TTR (transthyretin) amyloidosis, MSA (Multiple System Atrophy), PSP (Progressive Supranuclear Palsy), HD (Huntington’s Disease) and kidney dialysis amyloidosis.</p>
+        </div>
+      </section>
+      <section class="section-leadership bg-alternate">
+        <h1 class="section-title">Leadership Team</h1>
+        <div class="container">
+          <ul class="leadership-team--list">
+            <?php
+              for ($i=0; $i < count($allLeadershipContent); $i++) {
+                $leader = $allLeadershipContent[$i];
+                $full_name = $leader['first_name'] . ' ' . $leader['last_name'] . ', ' . $leader['title'];
+            ?>
+              <li class="leader">
+                <div class="leader-meta">
+                  <img src="<?php echo $leader['image']; ?>" alt="<?php echo $full_name; ?>" class="leader-image">
+                  <p>
+                    <strong class="leader-name"><?php echo $full_name; ?></strong>
+                    <span class="leader-title"><?php echo $leader['role']; ?></span>
+                  </p>
+                </div>
+                <p class="leader-bio"><?php echo $leader['bio']; ?></p>
+              </li>
+            <?php } ?>
+          </ul>
+        </div>
+      </section>
+      <section class="section-contact bg-highlight">
+        <div class="container">
+          <a href="#" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
         </div>
       </section>
       <address>
         <span class="phone">(425) 823-0400</span>
-        <p>12026 115th Ave., NE, Suite 100<br>
-        Kirkland, WA 98034</p>
+        <p>12026 115th Ave., NE, Suite 100 Kirkland, WA 98034</p>
       </address>
     </main>
-    <footer class="content-footer"></footer>
+    <?php include_once('_inc/page-parts/foot.php'); ?>
   </body>
 </html>
