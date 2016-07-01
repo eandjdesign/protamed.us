@@ -27,17 +27,26 @@ h1 {
 address {
   font-style: normal;
 }
-.svg-logo,
-.svg-footer-logo {
+.svg-logo--header,
+.svg-logo--footer {
   max-height: 100%;
   max-width: 100%;
   width: 500px;
 }
-.svg-logo {
+.svg-logo--header {
   width: 500px;
+  fill: white;
 }
-.svg-footer-logo {
+.svg-logo--footer {
   width: 250px;
+  fill: black;
+}
+
+.svg-defs {
+  height: 0;
+  width: 0;
+  position: relative;
+  visibility: hidden;
 }
 
 .container {

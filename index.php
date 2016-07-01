@@ -8,6 +8,9 @@ include_once('_inc/_start.php');
     <?php include_once('_inc/page-parts/svgs.php'); ?>
     <header class="content-header">
       <div class="container">
+        <svg class="svg-logo--header">
+          <use xlink:href="#svg-logo"></use>
+        </svg>
         <p class="header-caption">Our team is devoted to discovering and developing new therapies for devastating illnesses like Parkinson’s, Alzheimer’s, and other rare amyloid diseases.</p>
         <a href="#" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
       </div>
