@@ -3,8 +3,15 @@
 @import "components/buttons";
 
 .content-header,
-.content-main,
-.content-footer { text-align: center; }
+.section-contain,
+.content-footer {
+  text-align: center;
+}
+
+.content-header,
+.section-contain {
+  padding: 3em 0;
+}
 
 .container {
   max-width: 950px;
@@ -80,4 +87,10 @@ address {
   padding: 10px;
   border-radius: 100%;
   margin-right: 40px;
+}
+
+.copyright {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 16px;
 }

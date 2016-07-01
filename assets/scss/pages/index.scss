@@ -1,7 +1,6 @@
 @import "../library/foundation";
 
 .content-header {
-  padding: 25px 0;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -15,12 +14,11 @@
     bottom: 0;
     left: 0;
     position: absolute;
-    background-color: transparentize(#4F4F4F, .15);
+    background-color: transparentize(#000, .4);
     content: " ";
   }
 }
-.svg-logo,
-.header-caption {
+.container {
   position: relative;
   z-index: 2
 }
@@ -31,4 +29,15 @@
   @include susy-breakpoint($bp-large) {
     font-size: 60px;
   }
+}
+
+.section-intro {
+  .intro {
+    margin-top: 0;
+    + p { margin-bottom: 0; }
+  }
+}
+
+.section-leadership {
+  .section-title { margin-top: 0; }
 }
