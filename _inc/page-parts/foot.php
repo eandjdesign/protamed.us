@@ -4,15 +4,23 @@
       <a href="#" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
     </div>
   </section>
-  <div class="contact-drawer">
-  </div>
+
+  <section id="contact-us" class="section-contain section-contact-drawer bg-highlight">
+asdf;kljasdf;lkjasdf;lkjasdf;lkadsfkladfs;lkasdfkjadfslk
+  </section>
+
   <address>
-    <p class="phone">+1-425-823-0400</p>
+    <p>
+      <svg class="svg-icon--phone svg-fill--greyscale">
+        <use xlink:href="#svg-icon--phone"></use>
+      </svg>
+      +1-425-823-0400
+    </p>
     <p>ProtaMed, Inc.<br>
     12026 115th Avenue NE, Suite 100<br>
     Kirkland, Washington, USA 98034</p>
   </address>
-  <svg class="svg-logo--footer">
+  <svg class="svg-logo--footer svg-fill--dark">
     <use xlink:href="#svg-logo"></use>
   </svg>
   <p class="copyright bg-alternate">Copyright &copy; <?php echo date('Y'); ?> ProtoMed, Inc.</p>

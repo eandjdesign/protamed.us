@@ -1,6 +1,7 @@
 @import "library/reset";
 @import "library/foundation";
 @import "components/buttons";
+@import "components/svg";
 
 .content-header,
 .section-contain,
@@ -27,27 +28,7 @@ h1 {
 address {
   font-style: normal;
 }
-.svg-logo--header,
-.svg-logo--footer {
-  max-height: 100%;
-  max-width: 100%;
-  width: 500px;
-}
-.svg-logo--header {
-  width: 500px;
-  fill: white;
-}
-.svg-logo--footer {
-  width: 250px;
-  fill: black;
-}
 
-.svg-defs {
-  height: 0;
-  width: 0;
-  position: relative;
-  visibility: hidden;
-}
 
 .container {
   max-width: 930px;
@@ -70,38 +51,10 @@ address {
   background-color: $highlight;
 }
 
-// Leadership Team
-.leadership-team--list {
-  margin: 0 0 50px 0;
-  padding: 0;
-  list-style: none;
-}
-.leader {
-  margin: 100px 0 0;
-  padding: 0;
-  list-style: none;
-  text-align: left;
-}
-.leader-meta {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-}
-.leader-name { display: block; }
-.leader-title { display: block; }
-.leader-image {
-  border: 4px solid $highlight;
-  padding: 10px;
-  border-radius: 100%;
-  margin-right: 40px;
-}
-
-
 // Footer
 .copyright {
   margin: 0;
   padding: 10px 0;
   font-size: 16px;
+  border-bottom: 0;
 }

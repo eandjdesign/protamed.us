@@ -34,10 +34,84 @@
 .section-intro {
   .intro {
     margin-top: 0;
+    color: $highlight;
     + p { margin-bottom: 0; }
   }
 }
 
+// Leadership Team
 .section-leadership {
   .section-title { margin-top: 0; }
+}
+.leadership-team--list {
+  margin: 0 0 50px 0;
+  padding: 0;
+  list-style: none;
+}
+.leader {
+  margin: 100px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.leader-meta {
+  @include susy-breakpoint($bp-small) {
+    display: block;
+    text-align: center;
+  }
+  @include susy-breakpoint($bp-large) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+  }
+}
+.leader-name { display: block; }
+.leader-title { display: block; }
+.leader-image {
+  border: 4px solid $highlight;
+  padding: 10px;
+  border-radius: 100%;
+  @include susy-breakpoint($bp-large) {
+    margin-right: 40px;
+  }
+}
+
+
+$triangle: 40px;
+$flattener: 150px;
+
+// Contact form
+.section-contact-drawer {
+  position: relative;
+  overflow: visible;
+  background-color: darken($highlight, 10%);
+  border-top: 1px solid darken($highlight, 20%);
+  box-shadow: inset 0 0 20px darken($highlight, 20%);
+  &:before,
+  &:after {
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    position: absolute;
+  }
+  &:before {
+    z-index: 10;
+    top: -#{$triangle - 18 + 1};
+    left: calc(50% - #{$triangle + 64});
+    border-style: solid;
+    border-width: 0 #{$triangle + 64} #{$triangle/2 + 2} #{$triangle + 64};
+    border-color: transparent transparent darken($highlight, 20%) transparent;
+  }
+  &:after {
+    z-index: 20;
+    top: -#{$triangle - 18px};
+    left: calc(50% - #{$triangle + $flattener});
+    border-style: solid;
+    border-width: 0 #{$triangle + $flattener} $triangle #{$triangle + $flattener};
+    border-color: transparent transparent darken($highlight, 10%) transparent;
+  }
 }

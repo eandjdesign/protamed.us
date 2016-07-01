@@ -8,7 +8,7 @@ include_once('_inc/_start.php');
     <?php include_once('_inc/page-parts/svgs.php'); ?>
     <header class="content-header">
       <div class="container">
-        <svg class="svg-logo--header">
+        <svg class="svg-logo--header svg-fill--light">
           <use xlink:href="#svg-logo"></use>
         </svg>
         <p class="header-caption">Our team is devoted to discovering and developing new therapies for devastating illnesses like Parkinson’s, Alzheimer’s, and other rare amyloid diseases.</p>
@@ -18,7 +18,7 @@ include_once('_inc/_start.php');
     <main class="content-main">
       <section class="section-contain section-intro">
         <div class="container">
-          <p class="intro">ProtaMed, is a private drug development company, in Kirkland, WA, focused on targeting misfolded proteins and amyloid diseases.</p>
+          <p class="intro">ProtaMed is a privately held drug development company, established in November, 2015, focused on new medicines based on breakthrough science and technology previously discovered by ProteoTech and the University of Washington.</p>
           <p>We are utilizing our expertise in misfolded protein disorders, amyloid diseases, drug discovery and clinical development, to transform the lives of victims of PD (Parkinson’s Disease) and AD (Alzheimer’s Disease), as well as rare conditions such as AL (immunoglobulin light chain) amyloidosis, TTR (transthyretin) amyloidosis, MSA (Multiple System Atrophy), PSP (Progressive Supranuclear Palsy), HD (Huntington’s Disease) and kidney dialysis amyloidosis.</p>
         </div>
       </section>
