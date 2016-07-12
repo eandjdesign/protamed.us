@@ -26,6 +26,8 @@
 .header-caption {
   color: $inverted;
   font-size: 40px;
+  margin: 0;
+  padding-bottom: 80px;
   @include susy-breakpoint($bp-large) {
     font-size: 60px;
   }
@@ -87,31 +89,5 @@ $flattener: 150px;
 .section-contact-drawer {
   position: relative;
   overflow: visible;
-  background-color: darken($highlight, 10%);
-  border-top: 1px solid darken($highlight, 20%);
-  box-shadow: inset 0 0 20px darken($highlight, 20%);
-  &:before,
-  &:after {
-    width: 0;
-    height: 0;
-    display: block;
-    content: " ";
-    position: absolute;
-  }
-  &:before {
-    z-index: 10;
-    top: -#{$triangle - 18 + 1};
-    left: calc(50% - #{$triangle + 64});
-    border-style: solid;
-    border-width: 0 #{$triangle + 64} #{$triangle/2 + 2} #{$triangle + 64};
-    border-color: transparent transparent darken($highlight, 20%) transparent;
-  }
-  &:after {
-    z-index: 20;
-    top: -#{$triangle - 18px};
-    left: calc(50% - #{$triangle + $flattener});
-    border-style: solid;
-    border-width: 0 #{$triangle + $flattener} $triangle #{$triangle + $flattener};
-    border-color: transparent transparent darken($highlight, 10%) transparent;
-  }
+  background-color: $highlight;
 }

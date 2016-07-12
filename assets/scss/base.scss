@@ -3,6 +3,8 @@
 @import "components/buttons";
 @import "components/svg";
 
+@import "components/forms";
+
 .content-header,
 .section-contain,
 .content-footer {
@@ -15,7 +17,7 @@
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
 }
