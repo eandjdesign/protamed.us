@@ -1,0 +1,39 @@
+.form-item {
+  text-align: left;
+  margin: auto;
+}
+.form-item--label {
+  display: block;
+  color: $inverted;
+}
+.form-item--text {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparentize($inverted, .7);
+  border-radius: 20px;
+  font-size: 32px;
+  line-height: 1;
+  padding: 10px;
+  text-align: left;
+}
+::-webkit-input-placeholder {
+   color: $inverted;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $inverted;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $inverted;
+}
+
+:-ms-input-placeholder {
+   color: $inverted;
+}
+
+.form-item--centered {
+}
