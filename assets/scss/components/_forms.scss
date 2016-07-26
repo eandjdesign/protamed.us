@@ -1,39 +1,93 @@
 .form-item {
   text-align: left;
-  margin: auto;
+  margin: 0 auto 20px;
 }
 .form-item--label {
   display: block;
+  padding-left: 10px;
   color: $inverted;
+  font-size: 26px;
+  [class*="form-item--"] {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 -10px;
+    padding: 10px;
+    border: 0;
+    background-color: transparentize($inverted, .7);
+    font-size: 32px;
+    line-height: 1;
+    text-align: left;
+    border-radius: 20px;
+    overflow: hidden;
+    color: $inverted;
+    outline: 0;
+  }
 }
-.form-item--text {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
+.form-item--text {}
+.form-item--select {
+  // original reference: https://codepen.io/ericrasch/pen/zjDBx?editors=1100
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAeCAYAAAAo5+5WAAAAdUlEQVRIx2MQllCs+P//vwcQM1ATM4waPGrwqMEjzmBSweAxGMgu+k8YFJHjYsvFixfvwWUiSA6khtygsFmxYsV+dENBYiA5SsPYfvXq1QdghoLYIDFqRZ7jxo0bD4MwiE3tVOECxYM0uVHd4NFCaNTgQW4wAKpugq+9Zk7QAAAAAElFTkSuQmCC);
   background-color: transparentize($inverted, .7);
-  border-radius: 20px;
-  font-size: 32px;
-  line-height: 1;
-  padding: 10px;
-  text-align: left;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  border: transparent;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+
+  -webkit-padding-end: 20px;
+     -moz-padding-end: 20px;
+          padding-end: 20px;
+
+  -webkit-padding-start: 10px;
+     -moz-padding-start: 10px;
+          padding-start: 10px;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-::-webkit-input-placeholder {
-   color: $inverted;
+.form-item--textarea {
+  line-height: 1.25;
+  resize: vertical;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: $inverted;
+:-moz-placeholder           { color: transparentize(darken($inverted, 75%), .7); }
+::-moz-placeholder          { color: transparentize(darken($inverted, 75%), .7); }
+:-ms-input-placeholder      { color: transparentize(darken($inverted, 75%), .7); }
+::-webkit-input-placeholder { color: transparentize(darken($inverted, 75%), .7); }
+
+@include susy-breakpoint($bp-large) {
+  .form-item--firstname { @include span(4 of 12); }
+  .form-item--lastname  { @include span(last 8 of 12); }
+  .form-item--email     { @include span(6 of 12); }
+  .form-item--phone     { @include span(last 6 of 12); }
+
+  .form-item--company,
+  .form-item--address   { clear: both; }
+  .form-item--city      { @include span(6 of 12); }
+  .form-item--state     { @include span(last 6 of 12); }
+  .form-item--postal    { @include span(6 of 12); }
+  .form-item--country   { @include span(last 6 of 12); }
+
+  .form-item--comment   { clear: both; }
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: $inverted;
+.form-item--fieldset {
+  margin-bottom: 20px;
+  border: 0;
 }
-
-:-ms-input-placeholder {
-   color: $inverted;
+.form-item--legend {
+  display: none;
 }
-
-.form-item--centered {
+.form-item--centered.btn-group {
+  text-align: center;
+}
+.form-item--submit {
+  font-size: 28px;
+  line-height: 1.5;
 }
