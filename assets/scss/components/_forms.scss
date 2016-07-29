@@ -62,17 +62,17 @@
 ::-webkit-input-placeholder { color: transparentize(darken($inverted, 75%), .7); }
 
 @include susy-breakpoint($bp-large) {
-  .form-item--firstname { @include span(4 of 12); }
-  .form-item--lastname  { @include span(last 8 of 12); }
-  .form-item--email     { @include span(6 of 12); }
-  .form-item--phone     { @include span(last 6 of 12); }
+  .form-item--firstname,
+  .form-item--email,
+  .form-item--city,
+  .form-item--postal    { @include span(6 of 12); }
+  .form-item--lastname,
+  .form-item--phone,
+  .form-item--state,
+  .form-item--country   { @include span(last 6 of 12); }
 
   .form-item--company,
   .form-item--address   { clear: both; }
-  .form-item--city      { @include span(6 of 12); }
-  .form-item--state     { @include span(last 6 of 12); }
-  .form-item--postal    { @include span(6 of 12); }
-  .form-item--country   { @include span(last 6 of 12); }
 
   .form-item--comment   { clear: both; }
 }
