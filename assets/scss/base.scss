@@ -48,8 +48,13 @@ address {
 }
 
 [class*="bg-"] {
-  padding: 100px 0;
   overflow: hidden;
+  @include susy-breakpoint($bp-small) {
+    padding: 50px 0;
+  }
+  @include susy-breakpoint($bp-large) {
+    padding: 100px 0;
+  }
 }
 
 .bg-alternate {

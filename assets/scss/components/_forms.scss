@@ -7,26 +7,29 @@
 }
 .form-item--label {
   display: block;
-  padding-left: 10px;
   color: $inverted;
   font-size: 18px;
   @include susy-breakpoint($bp-large) {
+    padding-left: 10px;
     font-size: 26px;
   }
   [class*="form-item--"] {
     display: block;
     width: 100%;
-    margin: 0 0 0 -10px;
     padding: 10px 15px 15px 15px;
     border: 0;
     background-color: transparentize($inverted, .7);
-    font-size: 32px;
     line-height: 1.25;
+    font-size: 24px;
     text-align: left;
     border-radius: 20px;
     overflow: hidden;
     color: $inverted;
     outline: 0;
+    @include susy-breakpoint($bp-large) {
+      margin: 0 0 0 -10px;
+      font-size: 32px;
+    }
   }
 }
 .form-item--text {}
