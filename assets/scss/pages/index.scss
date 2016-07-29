@@ -60,7 +60,6 @@
     text-align: center;
   }
   @include susy-breakpoint($bp-large) {
-    max-width: 240px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -72,9 +71,10 @@
 .leader-name { display: block; }
 .leader-title { display: block; }
 .leader-image {
-  border: 4px solid $highlight;
+  max-width: 240px;
   padding: 10px;
   border-radius: 100%;
+  border: 4px solid $highlight;
   @include susy-breakpoint($bp-large) {
     margin-right: 40px;
   }
