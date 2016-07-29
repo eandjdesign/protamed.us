@@ -44,7 +44,7 @@
   .section-title { margin-top: 0; }
 }
 .leadership-team--list {
-  margin: 0 0 50px 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -85,7 +85,10 @@ $flattener: 150px;
 
 // Contact form
 .section-contact-drawer {
+  padding-top: 0;
   position: relative;
   overflow: visible;
-  background-color: $highlight;
+  .btn-group {
+    margin-bottom: 0;
+  }
 }

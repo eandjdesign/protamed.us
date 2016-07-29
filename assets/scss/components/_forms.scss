@@ -78,8 +78,9 @@
 }
 
 .form-item--fieldset {
-  margin-bottom: 20px;
+  margin-top: 20px;
   border: 0;
+  &:first-child { margin-top: 0; }
 }
 .form-item--legend {
   display: none;
