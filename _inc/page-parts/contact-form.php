@@ -369,6 +369,12 @@
   </fieldset>
   <fieldset class="form-item form-item-centered form-item--fieldset">
     <legend align="left" class="form-item form-item--legend hidden">How can we help you?</legend>
+    <div class="form-item form-item--centered form-item--contactpurpose">
+      <label class="form-item--label">
+        Contact Purpose
+        <input type="text" name="contact_purpoe" class="form-item--text" placeholder="Sales Inquiry">
+      </label>
+    </div>
     <div class="form-item form-item--centered form-item--comment">
       <label class="form-item--label">
         How can we help you?
