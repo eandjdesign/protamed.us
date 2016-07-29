@@ -60,6 +60,7 @@
     text-align: center;
   }
   @include susy-breakpoint($bp-large) {
+    max-width: 240px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
