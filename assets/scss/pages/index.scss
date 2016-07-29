@@ -35,6 +35,7 @@
   .intro {
     margin-top: 0;
     color: $highlight;
+    font-size: 32px;
     + p { margin-bottom: 0; }
   }
 }
@@ -70,7 +71,11 @@
 }
 .leader-name { display: block; }
 .leader-title { display: block; }
-.leader-bio { color: $alternate-text; }
+.leader-bio {
+  color: $alternate-text;
+  font-size: 24px;
+  line-height: 2;
+}
 .leader-image {
   max-width: 240px;
   padding: 10px;
