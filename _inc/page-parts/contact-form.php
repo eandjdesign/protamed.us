@@ -377,6 +377,6 @@
     </div>
   </fieldset>
   <div class="form-item form-item--centered btn-group">
-    <input type="submit" class="form-item--submit btn btn-outline btn-rounded btn-inverted" value="Submit Query">
+    <input type="submit" class="form-item--submit btn btn-outline btn-rounded btn-inverted" value="Send Message">
   </div>
 </form>
