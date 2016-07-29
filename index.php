@@ -47,5 +47,26 @@ include_once('_inc/_start.php');
       </section>
     </main>
     <?php include_once('_inc/page-parts/foot.php'); ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('document').ready(function() {
+        var $sectionContact = $('.section-contact'),
+            $contactDrawer  = $('#contact-us .container');
+
+        $('.content-header').on('click', '.btn', function(e) {
+          $sectionContact.addClass('contact-open');
+          $contactDrawer.removeClass('hidden');
+        });
+
+        $sectionContact.on('click', '.btn', function(e) {
+          e.preventDefault();
+          if (!$sectionContact.hasClass('contact-open')) {
+            $contactDrawer.removeClass('hidden');
+            $sectionContact.addClass('contact-open');
+          }
+        });
+
+      });
+    </script>
   </body>
 </html>

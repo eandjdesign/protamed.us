@@ -1,7 +1,7 @@
 <footer class="content-footer">
   <section class="section-contain section-contact bg-highlight">
     <div class="container">
-      <a href="#" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
+      <a href="#contact-us" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
     </div>
   </section>
 

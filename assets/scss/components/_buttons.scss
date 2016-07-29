@@ -19,6 +19,13 @@
     border-color: darken($inverted, 10%);
     transition: all .15s ease-in-out;
   }
+  .contact-open & {
+    border-color: transparent;
+    &:hover {
+      color: $inverted;
+      cursor: default;
+    }
+  }
 }
 .btn-rounded {
   border-radius: 100px;
