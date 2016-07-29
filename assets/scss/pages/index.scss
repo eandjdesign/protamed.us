@@ -39,7 +39,11 @@
   .intro {
     margin-top: 0;
     color: $highlight;
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 48px;
+    @include susy-breakpoint($bp-large) {
+      font-size: 32px;
+    }
     + p { margin-bottom: 0; }
   }
 }
