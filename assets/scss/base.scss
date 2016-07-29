@@ -31,6 +31,7 @@ h1 {
 }
 p {
   font-size: 20px;
+  line-height: 1.75;
   @include susy-breakpoint($bp-large) {
     font-size: 28px;
   }
