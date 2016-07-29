@@ -63,7 +63,7 @@ function collectLeadershipContent () {
       "image"      => "/assets/img/leadership/ken.jpg",
       "title"      => "Ph.D",
       "role"       => "Chief Development Officer",
-      "bio"        => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus sapien a odio tempus porta. Sed accumsan felis elit, eu luctus nisi facilisis vitae. Morbi fermentum ut massa quis interdum. Donec bibendum quam orci, semper vestibulum lectus facilisis eget. Fusce suscipit cursus magna tempor rutrum. Aliquam fringilla commodo dolor sed commodo. In hac habitasse platea dictumst. Proin rhoncus mauris nec urna ornare volutpat. Suspendisse id fringilla mi, dictum ultrices orci. Maecenas convallis mi vitae mauris commodo scelerisque.",
+      "bio"        => "Ken Duchin began his career at Bristol Myers Squibb and became the Executive Director of Human Pharmacology where he led the development of multiple drug candidates for over 15 years.  He worked at IVAX Corporation for 8 years and was involved in developing complex generic products and proprietary products in urology and oncology. Ken served as Vice President of Preclinical and Clinical Development at TheraVida, a urology startup company.  Most recently at Asubio Pharmaceuticals, he led Global Project Teams for first in class medicines in the areas of neurodegenerative disease and dermatology.",
     ),
     3 => array(
       "first_name" => "Luke",
