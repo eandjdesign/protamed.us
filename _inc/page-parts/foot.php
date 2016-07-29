@@ -5,8 +5,8 @@
     </div>
   </section>
 
-  <section id="contact-us" class="section-contain section-contact-drawer bg-highlight">
-    <div class="container form-container hidden">
+  <section id="contact-us" class="section-contain section-contact-drawer bg-highlight hidden">
+    <div class="container form-container">
       <?php include_once('_inc/page-parts/contact-form.php'); ?>
     </div>
   </section>

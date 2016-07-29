@@ -51,7 +51,7 @@ include_once('_inc/_start.php');
     <script type="text/javascript">
       $('document').ready(function() {
         var $sectionContact = $('.section-contact'),
-            $contactDrawer  = $('#contact-us .container');
+            $contactDrawer  = $('.section-contact-drawer');
 
         $('.content-header').on('click', '.btn', function(e) {
           $sectionContact.addClass('contact-open');
