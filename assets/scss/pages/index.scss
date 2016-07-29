@@ -24,13 +24,11 @@
 }
 
 .header-caption {
-  color: $inverted;
-  font-size: 40px;
   margin: 0;
   padding-bottom: 80px;
-  @include susy-breakpoint($bp-large) {
-    font-size: 60px;
-  }
+  color: $inverted;
+  font-size: 36px;
+  line-height: 60px;
 }
 
 .section-intro {

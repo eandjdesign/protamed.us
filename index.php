@@ -12,7 +12,7 @@ include_once('_inc/_start.php');
           <use xlink:href="#svg-logo"></use>
         </svg>
         <h1 class="header-caption">Our team is devoted to discovering and developing new therapies for devastating illnesses like Parkinson’s, Alzheimer’s, and other rare amyloid diseases.</h1>
-        <a href="#" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
+        <a href="#contact" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
       </div>
     </header>
     <main class="content-main">
