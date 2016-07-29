@@ -29,8 +29,11 @@ h1 {
   font-size: 40px;
   color: $highlight;
 }
-p{
-  font-size: 28px;
+p {
+  font-size: 20px;
+  @include susy-breakpoint($bp-large) {
+    font-size: 28px;
+  }
 }
 address {
   font-style: normal;
