@@ -2,7 +2,7 @@
 
 date_default_timezone_set('America/Los_Angeles');
 
-die('<pre>' . print_r($_SERVER,1) . '</pre>');
+// die('<pre>' . print_r($_SERVER,1) . '</pre>');
 
 /**
  * Construct the contact form's return URL
@@ -15,7 +15,7 @@ function getThanksUrl() {
 
   $thanksUrl .= 'http://' . $thanksUrl . $serverName;
 
-  if($serverPort = '8000') {
+  if($serverPort == '8000') {
     $thanksUrl .= ':' . $serverPort;
   }
 
