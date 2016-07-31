@@ -1,4 +1,4 @@
-<form name="contactform" method="post" action="send_form_email.php">
+<form name="contactform" method="post" action="//formspree.io/eric@eandjdesign.com">
   <fieldset class="form-item form-item-centered form-item--fieldset">
     <legend align="left" class="form-item form-item--legend">Your Information</legend>
     <div class="form-item form-item--centered form-item--firstname">
@@ -383,6 +383,7 @@
     </div>
   </fieldset>
   <div class="form-item form-item--centered btn-group">
+    <input type="hidden" name="_next" value="<?php echo getThanksUrl(); ?>">
     <input type="submit" class="form-item--submit btn btn-outline btn-rounded btn-inverted" value="Send Message">
   </div>
 </form>

@@ -19,14 +19,9 @@
       "email": "james@eandjdesign.com"
     }
   ],
-  "dependencies": {
-    "susy": "^2.2.12",
-    "bourbon": "^4.2.6",
-    "neat": "^1.2.2",
-    "breakpoint-sass": "^2.7.0",
-    "gulp": "^3.9.1"
-  },
   "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "gulp": "^3.9.1",
     "browser-sync": "^2.11.1",
     "gulp-connect-php": "0.0.7",
     "gulp-livereload": "^3.8.1",

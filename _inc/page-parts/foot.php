@@ -1,11 +1,11 @@
 <footer class="content-footer">
-  <section class="section-contain section-contact bg-highlight">
+  <section id="contact-us" class="section-contain section-contact bg-highlight">
     <div class="container">
       <a href="#contact-us" class="btn btn-outline btn-rounded btn-inverted">Contact Us</a>
     </div>
   </section>
 
-  <section id="contact-us" class="section-contain section-contact-drawer bg-highlight hidden">
+  <section class="section-contain section-contact-drawer bg-highlight">
     <div class="container form-container">
       <?php include_once('_inc/page-parts/contact-form.php'); ?>
     </div>
@@ -27,3 +27,8 @@
   </svg>
   <p class="copyright bg-alternate">Copyright &copy; <?php echo date('Y'); ?> ProtoMed, Inc.</p>
 </footer>
+
+<?php include_once('_inc/page-parts/modal.php'); ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="<?php echo getPageJsPath(); ?>"></script>

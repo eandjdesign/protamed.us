@@ -1,5 +1,28 @@
 <?php
+
 date_default_timezone_set('America/Los_Angeles');
+
+// die('<pre>' . print_r($_SERVER,1) . '</pre>');
+
+/**
+ * Construct the contact form's return URL
+ *
+ * @return string thanks URL.
+ */
+function getThanksUrl() {
+  $serverName = $_SERVER['SERVER_NAME'];
+  $serverPort = $_SERVER['SERVER_PORT'];
+
+  $thanksUrl .= 'http://' . $thanksUrl . $serverName;
+
+  if($serverPort = '8000') {
+    $thanksUrl .= ':' . $serverPort;
+  }
+
+  $thanksUrl .= '#thanks';
+
+  return $thanksUrl;
+}
 
 /**
  * Get page folder dynamically based on url.
@@ -86,9 +109,3 @@ function collectLeadershipContent () {
 }
 
 $allLeadershipContent = collectLeadershipContent();
-
-
-// function getLeadershipContent(array & $leadership_content) {
-//   print_r($leadership_content[1]);
-//   return $leadership_content[$leader];
-// }

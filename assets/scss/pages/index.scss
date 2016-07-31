@@ -25,22 +25,25 @@
 
 .header-caption {
   margin: 0;
-  padding-bottom: 80px;
   color: $inverted;
   font-size: 24px;
   line-height: 48px;
+  @include susy-breakpoint($bp-small) {
+    padding-bottom: 50px;
+  }
   @include susy-breakpoint($bp-large) {
+    padding-bottom: 80px;
     font-size: 36px;
     line-height: 60px;
   }
 }
 
 .section-intro {
+  p { line-height: 2; }
   .intro {
     margin-top: 0;
     color: $highlight;
     font-size: 24px;
-    line-height: 48px;
     @include susy-breakpoint($bp-large) {
       font-size: 32px;
     }
@@ -81,7 +84,10 @@
 .leader-title { display: block; }
 .leader-bio {
   color: $alternate-text;
-  font-size: 24px;
+  font-size: 20px;
+  @include susy-breakpoint($bp-large) {
+    font-size: 24px;
+  }
 }
 .leader-image {
   max-width: 240px;

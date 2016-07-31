@@ -1,14 +1,15 @@
 
 .btn {
   text-decoration: none;
-  @include susy-breakpoint($bp-large) {
-    padding: 25px 100px;
-    display: inline-block;
-  }
+  cursor: pointer;
   @include susy-breakpoint($bp-small) {
     padding: 20px 80px;
     display: block;
     margin: auto;
+  }
+  @include susy-breakpoint($bp-large) {
+    padding: 25px 100px;
+    display: inline-block;
   }
   &:hover { text-decoration: none; }
 }

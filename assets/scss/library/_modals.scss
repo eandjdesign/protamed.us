@@ -1,0 +1,60 @@
+.modal {
+  background-color: $inverted;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  @include transition(all, .25s, ease-out);
+  .modal-open & {
+    opacity: 1;
+    overflow: hidden;
+    z-index: 100;
+    @include transition(all, .25s, ease-in);
+  }
+  .modal-close {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    line-height: 1;
+    color: $alternate-text;
+    &.btn {
+      position: static;
+      color: inherit;
+    }
+  }
+
+}
+.modal-open {
+  overflow: hidden;
+}
+
+
+// Different Modal content below here
+[class*="modal-content--"] {
+  opacity: 0;
+  @include transition(opacity, 1s, ease-out);
+  [class*="modal-show--"] & {
+    opacity: 1;
+    @include transition(opacity, 1s, ease-in);
+  }
+}
+
+.modal-show--thanks {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.modal-content--thanks {
+  text-align: center;
+}
+//   display: none;
+//   .modal-show--thanks & {
+//     display: block;
+//   }
+// }

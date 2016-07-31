@@ -1,21 +1,22 @@
 @import "library/reset";
 @import "library/foundation";
-@import "components/buttons";
-@import "components/svg";
+@import "library/buttons";
+@import "library/svg";
 
-@import "components/forms";
+@import "library/forms";
+@import "library/modals";
 
 @import "library/helpers";
 
 .content-header,
 .section-contain,
-.content-footer {
-  text-align: center;
-}
+.content-footer { text-align: center; }
 
 .content-header,
-.section-intro {
-  padding: 100px 0;
+.section-intro,
+[class*="bg-"] {
+  @include susy-breakpoint($bp-small) { padding: 50px 0; }
+  @include susy-breakpoint($bp-large) { padding: 100px 0; }
 }
 
 .container {
@@ -36,9 +37,7 @@ p {
     font-size: 28px;
   }
 }
-address {
-  font-style: normal;
-}
+address { font-style: normal; }
 
 
 .container {
@@ -50,11 +49,14 @@ address {
 
 [class*="bg-"] {
   overflow: hidden;
+  @include transition(padding, .75s, ease-in-out);
+
   @include susy-breakpoint($bp-small) {
-    padding: 50px 0;
-  }
-  @include susy-breakpoint($bp-large) {
-    padding: 100px 0;
+    @include transition(padding, .75s, ease-in-out);
+    &.contact-open {
+      padding: 25px 0;
+      @include transition(padding, .75s, ease-in-out);
+    }
   }
 }
 
