@@ -26,6 +26,7 @@ include_once('_inc/_start.php');
         <h1 class="section-title">Leadership Team</h1>
         <div class="container">
           <ul class="leadership-team--list">
+
             <?php
               for ($i=0; $i < count($allLeadershipContent); $i++) {
                 $leader = $allLeadershipContent[$i];
@@ -42,6 +43,7 @@ include_once('_inc/_start.php');
                 <p class="leader-bio"><?php echo $leader['bio']; ?></p>
               </li>
             <?php } ?>
+
           </ul>
         </div>
       </section>
